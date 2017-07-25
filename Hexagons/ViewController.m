@@ -25,8 +25,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _groupView = [[YYHexagonsGroupView alloc] initWithFrame:CGRectMake(10, 30, self.view.bounds.size.width - 20, 400)];
-    
+    _groupView = [[YYHexagonsGroupView alloc] init];
+    _groupView.translatesAutoresizingMaskIntoConstraints = NO;
     _groupView.utilWidth = 15;
     _groupView.margin = 2;
     _groupView.delegate = self;
@@ -34,6 +34,14 @@
     _groupView.layer.borderColor = [UIColor colorWithRed:0.3 green:0.8 blue:1 alpha:1].CGColor;
     
     [self.view addSubview:_groupView];
+    
+    NSArray *groupView_constraints = @[
+                                       [_groupView.topAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.topAnchor constant:10],
+                                       [_groupView.leadingAnchor constraintEqualToAnchor:self.view.layoutMarginsGuide.leadingAnchor],
+                                       [_groupView.trailingAnchor constraintEqualToAnchor:self.view.layoutMarginsGuide.trailingAnchor],
+                                       [_groupView.heightAnchor constraintEqualToConstant:400]
+                                       ];
+    [NSLayoutConstraint activateConstraints:groupView_constraints];
     
     _count = 150;
     for (NSInteger i = 0; i < _count; i ++) {
@@ -44,11 +52,11 @@
     button.translatesAutoresizingMaskIntoConstraints = NO;
     [self.view addSubview:button];
     button.contentEdgeInsets = UIEdgeInsetsMake(3, 10, 3, 10);
-    NSArray *constraint = @[
+    NSArray *button_constraints = @[
                             [button.bottomAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.bottomAnchor constant:-10],
                             [button.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor],
                             ];
-    [NSLayoutConstraint activateConstraints:constraint];
+    [NSLayoutConstraint activateConstraints:button_constraints];
     button.backgroundColor = [UIColor colorWithRed:0.3 green:0.8 blue:1 alpha:1];
     [button setTitle:@"add count" forState:UIControlStateNormal];
     button.layer.cornerRadius = 3;
