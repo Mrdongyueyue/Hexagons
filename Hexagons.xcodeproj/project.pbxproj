@@ -15,6 +15,8 @@
 		3CFA97D01F27289C00BC3DD5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFA97CF1F27289C00BC3DD5 /* main.m */; };
 		3CFA97DA1F27289C00BC3DD5 /* HexagonsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFA97D91F27289C00BC3DD5 /* HexagonsTests.m */; };
 		3CFA97E51F27289C00BC3DD5 /* HexagonsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFA97E41F27289C00BC3DD5 /* HexagonsUITests.m */; };
+		3CFA97F41F2728C800BC3DD5 /* YYHexagonsLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFA97F31F2728C800BC3DD5 /* YYHexagonsLayer.m */; };
+		3CFA97F71F272CB000BC3DD5 /* YYHexagonsGroupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFA97F61F272CB000BC3DD5 /* YYHexagonsGroupView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		3CFA97E01F27289C00BC3DD5 /* HexagonsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HexagonsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CFA97E41F27289C00BC3DD5 /* HexagonsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HexagonsUITests.m; sourceTree = "<group>"; };
 		3CFA97E61F27289C00BC3DD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CFA97F21F2728C800BC3DD5 /* YYHexagonsLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYHexagonsLayer.h; sourceTree = "<group>"; };
+		3CFA97F31F2728C800BC3DD5 /* YYHexagonsLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYHexagonsLayer.m; sourceTree = "<group>"; };
+		3CFA97F51F272CB000BC3DD5 /* YYHexagonsGroupView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYHexagonsGroupView.h; sourceTree = "<group>"; };
+		3CFA97F61F272CB000BC3DD5 /* YYHexagonsGroupView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYHexagonsGroupView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,10 @@
 				3CFA97C11F27289C00BC3DD5 /* AppDelegate.m */,
 				3CFA97C31F27289C00BC3DD5 /* ViewController.h */,
 				3CFA97C41F27289C00BC3DD5 /* ViewController.m */,
+				3CFA97F51F272CB000BC3DD5 /* YYHexagonsGroupView.h */,
+				3CFA97F61F272CB000BC3DD5 /* YYHexagonsGroupView.m */,
+				3CFA97F21F2728C800BC3DD5 /* YYHexagonsLayer.h */,
+				3CFA97F31F2728C800BC3DD5 /* YYHexagonsLayer.m */,
 				3CFA97C61F27289C00BC3DD5 /* Main.storyboard */,
 				3CFA97C91F27289C00BC3DD5 /* Assets.xcassets */,
 				3CFA97CB1F27289C00BC3DD5 /* LaunchScreen.storyboard */,
@@ -262,9 +272,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CFA97F41F2728C800BC3DD5 /* YYHexagonsLayer.m in Sources */,
 				3CFA97C51F27289C00BC3DD5 /* ViewController.m in Sources */,
 				3CFA97D01F27289C00BC3DD5 /* main.m in Sources */,
 				3CFA97C21F27289C00BC3DD5 /* AppDelegate.m in Sources */,
+				3CFA97F71F272CB000BC3DD5 /* YYHexagonsGroupView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
